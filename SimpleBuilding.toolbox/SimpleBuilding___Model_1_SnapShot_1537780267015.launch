@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="TLCCmdLineParameters" value=""/>
+    <stringAttribute key="configurationName" value="Model_1_SnapShot_1537780267015"/>
+    <booleanAttribute key="deferLiveness" value="false"/>
+    <intAttribute key="dfidDepth" value="100"/>
+    <booleanAttribute key="dfidMode" value="false"/>
+    <intAttribute key="distributedFPSetCount" value="0"/>
+    <stringAttribute key="distributedNetworkInterface" value="192.168.1.102"/>
+    <intAttribute key="distributedNodesCount" value="1"/>
+    <stringAttribute key="distributedTLC" value="off"/>
+    <stringAttribute key="distributedTLCVMArgs" value=""/>
+    <intAttribute key="fpBits" value="1"/>
+    <intAttribute key="fpIndex" value="1"/>
+    <intAttribute key="maxHeapSize" value="75"/>
+    <intAttribute key="maxSetSize" value="1000000"/>
+    <booleanAttribute key="mcMode" value="true"/>
+    <stringAttribute key="modelBehaviorInit" value="Init"/>
+    <stringAttribute key="modelBehaviorNext" value="Next"/>
+    <stringAttribute key="modelBehaviorSpec" value="Spec"/>
+    <intAttribute key="modelBehaviorSpecType" value="2"/>
+    <stringAttribute key="modelBehaviorVars" value="out, register, in"/>
+    <stringAttribute key="modelComments" value=""/>
+    <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+    <listAttribute key="modelCorrectnessInvariants">
+        <listEntry value="1TypeOk"/>
+        <listEntry value="0~((&quot;alun&quot; \in in) \land (&quot;kezhi&quot; \in in))"/>
+        <listEntry value="0(\A p \in PERSON : p \in register) =&gt; (\E p \in register : p \in out)"/>
+        <listEntry value="0\A p \in out : p \in PERSON"/>
+        <listEntry value="0\A p \in register : p \in PERSON"/>
+        <listEntry value="0\A p \in in : p \in register"/>
+        <listEntry value="0\A p \in register : p \in in"/>
+        <listEntry value="0(&quot;nanlin&quot; \in in) =&gt; (&quot;david&quot; \in in)"/>
+        <listEntry value="0~(&quot;nanlin&quot; \in in)"/>
+        <listEntry value="1&quot;nanlin&quot; \in PERSON"/>
+    </listAttribute>
+    <listAttribute key="modelCorrectnessProperties"/>
+    <stringAttribute key="modelExpressionEval" value=""/>
+    <stringAttribute key="modelParameterActionConstraint" value=""/>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="PERSON;;{&quot;alun&quot;, &quot;nanlin&quot;, &quot;kezhi&quot;, &quot;david&quot;};0;0"/>
+    </listAttribute>
+    <stringAttribute key="modelParameterContraint" value=""/>
+    <listAttribute key="modelParameterDefinitions"/>
+    <stringAttribute key="modelParameterModelValues" value="{}"/>
+    <stringAttribute key="modelParameterNewDefinitions" value=""/>
+    <intAttribute key="numberOfWorkers" value="2"/>
+    <booleanAttribute key="recover" value="false"/>
+    <stringAttribute key="result.mail.address" value=""/>
+    <intAttribute key="simuAril" value="-1"/>
+    <intAttribute key="simuDepth" value="100"/>
+    <intAttribute key="simuSeed" value="-1"/>
+    <stringAttribute key="specName" value="SimpleBuilding"/>
+    <stringAttribute key="view" value=""/>
+    <booleanAttribute key="visualizeStateGraph" value="false"/>
+</launchConfiguration>
